@@ -2,13 +2,7 @@ services:
   - type: web
     name: agrolink
     runtime: docker
-    plan: starter
-    dockerfilePath: ./agrolink/Dockerfile
-    dockerContext: ./agrolink
-    disk:
-      name: agrolink-data
-      mountPath: /data
-      sizeGB: 1
+    plan: free
     envVars:
       - key: AGROLINK_DATA_DIR
         value: /data
