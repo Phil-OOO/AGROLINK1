@@ -3,6 +3,8 @@ services:
     name: agrolink
     runtime: docker
     plan: free
+    dockerfilePath: ./agrolink/Dockerfile
+    dockerContext: ./agrolink
     envVars:
       - key: AGROLINK_DATA_DIR
         value: /data
