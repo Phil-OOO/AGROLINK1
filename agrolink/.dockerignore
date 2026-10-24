@@ -1,0 +1,6 @@
+.git
+__pycache__
+*.json
+*.csv
+assets/
+product_images/

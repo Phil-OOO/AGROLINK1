@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: agrolink
+    runtime: docker
+    plan: starter        # a persistent disk needs a paid plan
+    disk:
+      name: agrolink-data
+      mountPath: /data   # accounts, orders and photos are saved here
+      sizeGB: 1
+    envVars:
+      - key: AGROLINK_DATA_DIR
+        value: /data
+      - key: AGROLINK_WEB
+        value: "1"

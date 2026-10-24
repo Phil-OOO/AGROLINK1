@@ -1,0 +1,16 @@
+# Runtime data (user accounts, password hashes, orders, photos)
+users.json
+messages.json
+products.json
+orders.json
+offers.json
+assets/
+product_images/
+*.csv
+*.tmp
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/

@@ -1,0 +1,8 @@
+# Versions below are the ones AgroLink was tested with. The FastAPI/Starlette/Pydantic pins matter:
+# newer FastAPI releases break Flet 0.25's web server.
+flet==0.25.2
+flet-web==0.25.2
+fastapi==0.99.1
+starlette==0.27.0
+pydantic<2
+uvicorn<0.30
